@@ -1,0 +1,315 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+:root{
+    --font:'FoundersGrotesk-Semibold', sans-serif;
+    --font2:'Courier New', Courier, monospace;
+    --mainbgcolor:#F1F1F1;
+    --herofont:#212121;
+}
+
+*{
+    font-family: var(--font);
+    
+}
+body{
+    background-color: var(--mainbgcolor);
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+
+
+/* CSS for Navbar */
+.Navbar{
+    width: 100%;
+    height: 10vh;
+    color: var(--herofont);
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30vw;
+    padding-left: 3vw;
+    /* position: fixed;
+    top: 0; */
+}
+.navpart2{
+    width: 60%;
+    height: 8vh;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3vw;
+}
+
+.navpart2 a{
+    color: var(--herofont);
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.navpart2 .right{
+    padding-left: 18vw ;
+    padding-right: 0;
+
+}
+
+
+/* CSS for Hero Section */
+.hero{
+    color: var(--herofont);
+    width: 65%;
+    height: 65%;
+    margin-top: 4vw;
+    margin-left: 3vw;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center;
+    align-items: center; */
+    font-size: 3vw;
+    font-family: var(--font3);
+    line-height: 0;
+    text-transform: uppercase;
+}
+
+.hero h1{
+    letter-spacing: -0.4vw;
+    font-weight:900;
+}
+
+
+/* CSS for lowerhero section */
+
+.lowerhero{
+
+    width: 93%;
+    height: 10vh;
+    margin: auto;
+    background-color: #F1F1F1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 8vh;
+    border-top: solid 0.1vw #212121;
+}
+
+.lowerhero p{
+    font-size: 1rem;
+    font-family: var(--font2);
+    color: #212121;
+    letter-spacing: 0.1vw;
+    padding: 0;
+    margin: 0;
+}
+
+.lowerhero button{
+    font-size: 1rem;
+    padding: 0.2vw 1vw;
+     border-radius: 5vw;
+}
+
+
+/* CSS for moving text */
+
+.motiont{
+    width: 100%;
+    height: auto;
+    margin: auto;
+    display: flex;
+    /* font-size: 5vw; */
+    /* gap: 2vw; */
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    background-color: #004D43;
+    border-top-left-radius: 2vw;
+    border-top-right-radius: 2vw;
+    
+}
+.motioncon{
+    width: 200%;
+    display: flex;
+    /* border-top: solid 0.1vw var(--mainbgcolor);
+    border-bottom: solid 0.1vw var(--mainbgcolor); */
+    max-height: 70vh;
+    display: flex;
+    flex-wrap: nowrap;
+    font-family: var(--font3);
+    color: #212121;
+    text-transform: uppercase;
+    gap: 0.5vw;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    background-color: #004D43;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    align-items: center;
+    
+}
+
+.motioncon h1{
+    min-width: 95%;
+    max-height: 70vh;
+    color: var(--mainbgcolor);
+    font-size: 20vw;
+    font-weight: 600;
+    letter-spacing: 0.1vw;
+    border-top: solid 0.1vw var(--mainbgcolor);
+    border-bottom: solid 0.1vw var(--mainbgcolor);
+}
+
+
+/* CSS for Green screen */
+
+
+.main-green{
+    width: 100%;
+    height: 200vh;
+    background-color: #CDEA68;
+    margin-top: 5vh;
+}
+.main-green .green-head{
+    font-size: 3vw;
+    color: #212121;
+    font-family: var(--font2);
+    letter-spacing: 0.2vw;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    padding: 5vw;
+}
+
+/* CSS for Green screen text */
+.green-subcon{
+    width: 90%;
+    height: auto;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    border-top: solid 0.1vw #212121;
+    border-bottom: solid 0.1vw #212121;
+  
+}
+.gfirst{
+    padding: 1vw;
+    width: 40%;
+    height: 50vh;
+    font-size: 1.2rem;
+}
+.gsec{
+    padding: 1vw;
+    width: 25%;
+     height: 50vh;
+     font-size: 1.2rem;
+
+}
+.gthir{
+    padding: 1vw;
+    width: 25%;
+     height: 30vh;
+     display: flex;
+     flex-direction: column;
+     padding: 2vw;
+     gap: 0.5vw;
+     margin-top: 20vh;
+     
+}
+.gthir p{
+    padding-left: 7vw;
+    margin: 0; 
+    line-height: 1;
+    text-decoration: underline;
+}
+
+/* Css for green img container */
+
+.green-imgcon{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2vw;
+    margin-top: 5vh;
+}
+
+.gifp{
+    width: 45%;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    padding-left:5vw;
+}
+
+.gifp h1{
+    font-size: 3.5vw;
+    color: #212121;
+    font-family: var(--font2);
+    letter-spacing: 0.2vw;
+    margin-bottom: 5vh;
+    font-weight: semibold;
+}
+.gifp button{
+    width: 25%;
+    height: 10vh;
+    background-color: #000000;
+    color: var(--mainbgcolor);
+    font-size: 1.2rem;
+    font-family: var(--font2);
+    border-radius: 2vw;
+    border: none;
+    cursor: pointer;;
+}
+
+.gifs{
+    width: 45%;
+    height: 50vh;
+}
+.gifs img{
+    width:100%;
+    border-radius: 2vw;
+
+}
+
+
+/* CSS for green balls img */
+
+
+.balls-container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    margin-top: 5vh;
+
+}
+.balls-container img{
+    width: 100%;
+    height: auto;
+    position: absolute;
+    z-index: -10;
+}
+
+.balls-text{
+    width:40vw;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    padding: 30vw;
+}
+.ballone,.balltwo{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
