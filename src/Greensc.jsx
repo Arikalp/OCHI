@@ -2,7 +2,7 @@ import React from "react";
 
 const Greensc = () => {
   return (
-    <div className="main-green">
+    <div data-scroll data-scroll-speed="-0.45" className="main-green">
       <h1 className="green-head">
         Ochi is a strategic presentation agency for forward-thinking businesses
         that need to raise funds, sell prod­ucts, ex­plain com­plex ideas, and

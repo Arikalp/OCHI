@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import React from "react";
 
 function Hero() {
@@ -15,7 +16,11 @@ function Hero() {
             if(index===1){
                 return (
               <div key={index} style={{ display: "flex", alignItems: "center", gap: "1vw" }}>
-                <img src="src\assets\ochi.png" alt="ochi" style={imageStyle} />
+                <motion.img 
+                initial={{width:"0vw" }}
+                animate={{ width:"10vw" }}  
+                transition={{ duration: 1.5 ,ease: "easeInOut"}}
+                src="src\assets\ochi.png" alt="ochi" style={imageStyle}  />
                 <h1>{text}</h1>
               </div>
             );

@@ -2,7 +2,7 @@ import React from 'react'
 import { motion } from 'framer-motion'
 export const Motiont = () => {
   return (
-    <div className='motiont '> 
+    <div data-scroll data-scroll-speed="0.25"  className='motiont '> 
     <motion.div 
     initial={{ x:0}}
     animate={{ x:"-200%" }}
