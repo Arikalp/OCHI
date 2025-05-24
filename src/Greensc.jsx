@@ -1,4 +1,5 @@
 import React from "react";
+import greenPic from './assets/green-pic.jpg';
 
 const Greensc = () => {
   return (
@@ -43,7 +44,7 @@ const Greensc = () => {
             <button>READ MORE</button>
         </div>
         <div className="gifs">
-                <img src="src\assets\Green pic.jpg" alt="" />
+                <img src={greenPic} alt="green section image" />
         </div>
       </div>
     </div>

@@ -1,5 +1,7 @@
 import { motion } from "framer-motion";
 import React from "react";
+import ochiLogo from '../assets/ochi.png';
+import diagonalArrow from '../assets/diagonal-arrow.png';
 
 function Hero() {
 
@@ -20,7 +22,7 @@ function Hero() {
                 initial={{width:"0vw" }}
                 animate={{ width:"10vw" }}  
                 transition={{ duration: 1.5 ,ease: "easeInOut"}}
-                src="public/assets/ochi.png" alt="ochi" style={imageStyle}  />
+                src={ochiLogo} alt="ochi" style={imageStyle}  />
                 <h1>{text}</h1>
               </div>
             );
@@ -35,7 +37,7 @@ function Hero() {
       <div className="lowerhero">
         <p>For public and private companies</p>
         <p>From the first pitch to IPO</p>
-        <button>START THE PROJECT <img src="public/assets/diagonal-arrow.png" alt="" width='20vw'/></button>
+        <button>START THE PROJECT <img src={diagonalArrow} alt="" width='20vw'/></button>
       </div>
     </>
   );

@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import ballsImg from '../assets/balls-img.jpg';
 
 export const Balls = () => {
     const [deg, setdeg] = useState(0);
@@ -23,7 +24,7 @@ export const Balls = () => {
     return (
         <>
             <div data-scroll data-scroll-speed="-0.5" className="balls-container">
-                <img src="public/assets/balls img.jpg" alt="" />
+                <img src={ballsImg} alt="balls background" />
             </div>
             <div data-scroll data-scroll-speed="-0.65" className="eyes">
                 <div className="ballone">
