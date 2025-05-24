@@ -10,21 +10,21 @@ const Cards = () => {
       <div className="cards-container">
         <div className="card-one img-con">
           <h1>SALIANCE LAB</h1>
-          <img src="src\assets\cardone.png" alt="" />
+          <img src="public/assets/cardone.png" alt="" />
         </div>
         <div className="card-two img-con">
             <h1>CARDBOARD SPACESHIP</h1>
-          <img src="src\assets\cardtwo.png" alt="" />
+          <img src="public/assets/cardtwo.png" alt="" />
         </div>
         <div className="card-three img-con">
             <h1>AH2 & MATT HORN</h1>
-          <img src="src\assets\cardthree.png" alt="" />
+            <img src="public/assets/cardthree.png" alt="" />
         </div>
         <div className="card-four img-con">
             <h1>
                 FYDE
             </h1>
-          <img src="src\assets\cardfour.png" alt="" />
+          <img src="public/assets/cardfour.png" alt="" />
         </div>
       </div>
 

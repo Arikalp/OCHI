@@ -23,7 +23,7 @@ export const Balls = () => {
     return (
         <>
             <div data-scroll data-scroll-speed="-0.5" className="balls-container">
-                <img src="src/assets/balls img.jpg" alt="" />
+                <img src="public/assets/balls img.jpg" alt="" />
             </div>
             <div data-scroll data-scroll-speed="-0.65" className="eyes">
                 <div className="ballone">

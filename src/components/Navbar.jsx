@@ -16,7 +16,10 @@ const Navbar = () => {
             {["Services", "Our Work", "About Us", "Insights", "Contact Us"].map((item, index) => (
                 <a href="#" key={index} className={`text-lg font-regular ${index===4 ? 'right':''}`}>{item}</a> 
             ))}   
+
         </div>
+        
+
     </div>
   )
 }
