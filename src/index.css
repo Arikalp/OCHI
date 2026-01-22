@@ -34,8 +34,6 @@ body{
     align-items: center;
     gap: 30vw;
     padding-left: 3vw;
-    /* position: fixed;
-    top: 0; */
 }
 .navpart2{
     width: 60%;
@@ -56,7 +54,47 @@ body{
 .navpart2 .right{
     padding-left: 18vw ;
     padding-right: 0;
+}
 
+/* Mobile responsive styles for Navbar */
+@media (max-width: 768px) {
+    .Navbar {
+        gap: 5vw;
+        padding: 1rem 2vw;
+        height: auto;
+        min-height: 8vh;
+    }
+    
+    .navpart2 {
+        width: 90%;
+        gap: 2vw;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    
+    .navpart2 a {
+        font-size: 1rem;
+    }
+    
+    .navpart2 .right {
+        padding-left: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .Navbar {
+        gap: 2vw;
+        padding: 1rem 1vw;
+    }
+    
+    .navpart2 {
+        width: 95%;
+        gap: 1vw;
+    }
+    
+    .navpart2 a {
+        font-size: 0.9rem;
+    }
 }
 
 
@@ -69,8 +107,6 @@ body{
     margin-left: 3vw;
     display: flex;
     flex-direction: column;
-    /* justify-content: center;
-    align-items: center; */
     font-size: 3vw;
     font-family: var(--font3);
     line-height: 0;
@@ -82,11 +118,73 @@ body{
     font-weight:900;
 }
 
+.hero-line {
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+}
+
+.hero-logo {
+    width: 10vw;
+    height: 5vw;
+    border-radius: 5%;
+}
+
+.button-arrow {
+    width: 20px;
+    height: auto;
+}
+
+/* Mobile responsive styles for Hero */
+@media (max-width: 768px) {
+    .hero {
+        width: 90%;
+        margin-left: 5vw;
+        margin-top: 8vw;
+        font-size: 12vw;
+    }
+    
+    .hero h1 {
+        letter-spacing: -2vw;
+        line-height: 0.9;
+        margin: 0.5rem 0;
+    }
+    
+    .hero-line {
+        gap: 3vw;
+    }
+    
+    .hero-logo {
+        width: 20vw;
+        height: 10vw;
+    }
+    
+    .button-arrow {
+        width: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero {
+        font-size: 15vw;
+        width: 95%;
+        margin-left: 2.5vw;
+    }
+    
+    .hero h1 {
+        letter-spacing: -2.5vw;
+    }
+    
+    .hero-logo {
+        width: 25vw;
+        height: 12vw;
+    }
+}
+
 
 /* CSS for lowerhero section */
 
 .lowerhero{
-
     width: 93%;
     height: 10vh;
     margin: auto;
@@ -110,7 +208,48 @@ body{
 .lowerhero button{
     font-size: 1rem;
     padding: 0.2vw 1vw;
-     border-radius: 5vw;
+    border-radius: 5vw;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+/* Mobile responsive styles for lowerhero */
+@media (max-width: 768px) {
+    .lowerhero {
+        flex-direction: column;
+        height: auto;
+        padding: 4vw 2vw;
+        gap: 3vw;
+        text-align: center;
+        width: 96%;
+    }
+    
+    .lowerhero p {
+        font-size: 0.9rem;
+        margin: 0.5rem 0;
+    }
+    
+    .lowerhero button {
+        font-size: 0.9rem;
+        padding: 3vw 6vw;
+        border-radius: 8vw;
+    }
+}
+
+@media (max-width: 480px) {
+    .lowerhero {
+        padding: 6vw 4vw;
+    }
+    
+    .lowerhero p {
+        font-size: 0.8rem;
+    }
+    
+    .lowerhero button {
+        font-size: 0.8rem;
+        padding: 4vw 8vw;
+    }
 }
 
 
